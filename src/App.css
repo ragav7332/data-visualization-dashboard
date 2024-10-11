@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+/* Example CSS for layout */
+.dashboard {
+  padding: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.sidebar {
+  transition: all 0.3s ease; /* Smooth transition */
+  overflow: hidden; /* Hide overflow */
+  height: 100vh; /* Full height */
+}
+
+.sidebar.closed {
+  width: 0; /* Hide sidebar */
+}
+
+.sidebar.open {
+  width: 250px; /* Show sidebar width */
+}
+
+
+
+.chart-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+

@@ -1,0 +1,27 @@
+.sidebar-closed {
+   
+    width: 60px,
+  }
+  
+  .sidebar-open {
+    width: 250px;
+    transition: width 0.3s;
+    height: fit-content;
+  }
+  
+  .content {
+    width: 100%;
+    padding-left: 60px;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .btn {
+    border: none;
+    outline: none;
+  }
+  
