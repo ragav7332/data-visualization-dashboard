@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Data Visualization Dashboard</h1>
+      <h1 style={{textAlign:'center'}}>Data Visualization Dashboard</h1>
       <SalesChart data={data} />
       <RegionDistribution data={data} />
     </div>

@@ -168,22 +168,21 @@ import Home from '../src/Home';
 import Dashboard from './pages/Dashboard';
 import RegionDistribution from './Components/RegionDistribution';
 import Header from './pages/Header';
+import '../src/pages/Sidebar.css'
 
 function App() {
   return (
     <Router>
       <div className="app">
         <Header />
-      <div className="d-flex">
-        <Sidebar />
         <div className="content p-4">
+        <Sidebar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/others" element={<RegionDistribution />} />
           </Routes>
         </div>
-      </div>
       </div>
     </Router>
   );

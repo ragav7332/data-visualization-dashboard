@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.header {
+  z-index: 1000; /* Ensures header stays above sidebar */
+}
 
 .App-logo {
   height: 40vmin;
@@ -47,21 +56,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.sidebar {
-  transition: all 0.3s ease; /* Smooth transition */
-  overflow: hidden; /* Hide overflow */
-  height: 100vh; /* Full height */
-}
-
-.sidebar.closed {
-  width: 0; /* Hide sidebar */
-}
-
-.sidebar.open {
-  width: 250px; /* Show sidebar width */
-}
-
-
 
 .chart-container {
   padding: 20px;

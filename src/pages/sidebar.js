@@ -12,19 +12,19 @@ function Sidebar() {
   };
 
   return (
-    <div className={`d-flex flex-column bg-dark vh-150 sidebar ${isOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
-      <button className="btn btn-dark toggle-btn" onClick={toggleSidebar}>
+    <div className={`d-flex flex-column vh-150 sidebar ${isOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+      <button className="btn btntoggle-btn" onClick={toggleSidebar}>
         <FaBars />
       </button>
       <ul className="nav flex-column">
         <li className="nav-item ">
-          <Link to="/" className="nav-link text-white d-flex align-items-center bg-dark vh-300">
+          <Link to="/" className="nav-link text-white d-flex align-items-center  vh-300">
             <FaHome className="me-2" />
             {isOpen && <span className="sidebar-text">Home</span>}
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/dashboard" className="nav-link text-white d-flex align-items-center bg-dark vh-300">
+          <Link to="/dashboard" className="nav-link text-white d-flex align-items-center  vh-300">
             <FaChartBar className="me-2" />
             {isOpen && <span className="sidebar-text">Dashboard</span>}
           </Link>
