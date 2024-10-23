@@ -125,7 +125,7 @@ const SalesChart = ({ data }) => {
       .filter(item => item.product_category === category) // Filter by product_category
       .reduce((total, item) => total + item.sales_amount, 0); // Sum sales_amount
 
-    console.log(`Total sales for ${category}:`, totalSales); // Debugging
+    // console.log(`Total sales for ${category}:`, totalSales); // Debugging
     return totalSales;
   });
 
