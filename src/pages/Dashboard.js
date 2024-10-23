@@ -17,9 +17,7 @@ const App = () => {
           throw new Error('Network response was not ok');
         }
         const result = await response.json();
-        console.log('====================================');
-        console.log("Here Result:",result);
-        console.log('====================================');
+     
         setData(result); // Assuming the API returns an array of sales data
       } catch (err) {
         setError(err.message);
